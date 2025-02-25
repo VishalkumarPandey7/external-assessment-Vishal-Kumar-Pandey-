@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            background: #7b5c86;
+            color: white;
+        }
+        .sidebar {
+            width: 250px;
+            background: #3d2f4f;
+            height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        .sidebar img {
+        object-fit: cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid white;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+        }
+        .main-content {
+            padding: 50px;
+            flex: 1;
+        }
+        h1 {
+            font-size: 40px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .highlight {
+            background: rgb(58, 0, 128);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .developer {
+            text-decoration: underline;
+        }
+        .social-links img {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+        .btn {
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:first-of-type {
+            background: white;
+            color: #422f4f;
+        }
+        .btn:last-of-type {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* Projects Section */
+        .projects {
+            margin-top: 30px;
+        }
+        .project-cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: rgb(255, 255, 255);
+            color: black;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+        }
+        .card p {
+            font-size: 14px;
+            color: #444;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background: rgb(49, 0, 128);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <img src="WhatsApp Image 2024-10-08 at 10.01.05 PM.jpeg" alt="Profile Picture">
+        <ul>
+            <li>📄 About</li>
+            <li>💼 Experience</li>
+            <li>📁 Projects</li>
+            <li>📊 Skills</li>
+            <li>🎓 Education</li>
+            <li>📧 Contact</li>
+            <li>📂 Resume</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Hi, I'm <span class="highlight">Vishal Kumar Pandey</span>.</h1>
+        <h2>A <span class="developer">Developer</span></h2>
+        <p>I'm Vishal Pandey, a BTech student passionate about tech innovation, with experience in AI-driven projects and a drive to excel in coding, data structures, and competitive challenges. I'm also exploring startup ideas in healthcare and defense while preparing for major competitions like L'Oréal Brandstorm and Flipkart GRiD.</p>
+
+        <div class="social-links">
+            <a href="#"><img src="https://tse1.mm.bing.net/th?id=OIP.WbP2N4M5QjG24ntMED-G0wHaHa&pid=Api&P=0&h=220" alt="LinkedIn"></a>
+            <a href="#"><img src="https://tse2.mm.bing.net/th?id=OIP.fqZ9-PPqcG_cm0k3JfoINQHaEK&pid=Api&P=0&h=220" alt="GitHub"></a>
+        </div>
+
+        <button class="btn">Read More</button>
+        <button class="btn">Contact Me</button>
+
+        <!-- Projects Section -->
+        <div class="projects">
+            <h2>My Projects</h2>
+            <div class="project-cards">
+                <div class="card">
+                    <img src="WhatsApp Image 2024-12-05 at 11.12.25 AM.jpeg" alt="Project 1">
+                    <h3>blind guiding </h3>
+                    <p>A smart blind-guiding robot with obstacle avoidance, pit detection, GPS navigation, voice assistance, and haptic feedback for safe mobility.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <img src="Screenshot 2025-02-25 113134.png" alt="Project 2">
+                    <h3>Ice cream </h3>
+                    <p>A modern ice cream parlour website with an interactive menu, online ordering, customer reviews, store locator, and engaging visuals.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="card">
+                    <img src="Screenshot 2024-12-28 201304.png" alt="Project 3">
+                    <h3>Viril Ai</h3>
+                    <p>We aimed to revolutionize men’s grooming with Viril AI, an AI-powered assistant that personalizes skincare and styling.</p>
+                    <a href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+   
+</body>
+</html>
